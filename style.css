@@ -21,6 +21,8 @@
 }
 
 body {
+    box-sizing: border-box;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,24 +36,10 @@ body {
 .cards {
     display: flex;
     flex-direction: column;
-    width: 95%;
+    justify-content: center;
+    max-width: 95%;
     border-radius: 10px;
     overflow: hidden;
-}
-
-.sedans {
-    --bg-color: var(--orange-100);
-    background-color: var(--bg-color);
-}
-
-.suvs {
-    --bg-color: var(--cyan-300);
-    background-color: var(--bg-color);
-}
-
-.luxury {
-    --bg-color: var(--cyan-500);
-    background-color: var(--bg-color);
 }
 
 .card {
@@ -61,8 +49,24 @@ body {
     flex-direction: column;
 }
 
+.card.sedans {
+    --bg-color: var(--orange-100);
+    background-color: var(--bg-color);
+}
+
+.card.suvs {
+    --bg-color: var(--cyan-300);
+    background-color: var(--bg-color);
+}
+
+.card.luxury {
+    --bg-color: var(--cyan-500);
+    background-color: var(--bg-color);
+}
+
 .card .card-details{
     color: var(--gray-100);
+    margin-bottom: 2rem;
 }
 
 .sedans .card-details::before {
@@ -89,7 +93,7 @@ body {
 }
 
 .card .card-button {
-    margin-top: 2rem;
+    margin-top: auto;
     text-decoration: none;
     user-select: none;
     text-align: center;
@@ -114,4 +118,19 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 720px){
+    body {
+        padding: 0;
+    }
+    
+    .cards {
+        flex-direction: row;
+    }
+
+    .card .card-details{
+        max-width: 25ch;
+        margin-bottom: 5rem;
+    }
 }

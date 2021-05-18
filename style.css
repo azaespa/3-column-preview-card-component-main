@@ -69,15 +69,15 @@ body {
     margin-bottom: 2rem;
 }
 
-.sedans .card-details::before {
+.card.sedans .card-details::before {
     content: url(images/icon-sedans.svg);
 }
 
-.suvs .card-details::before {
+.card.suvs .card-details::before {
     content: url(images/icon-suvs.svg);
 }
 
-.luxury .card-details::before {
+.card.luxury .card-details::before {
     content: url(images/icon-luxury.svg);
 }
 
@@ -97,11 +97,11 @@ body {
     text-decoration: none;
     user-select: none;
     text-align: center;
-    color: var(--bg-color);
-    background-color: var(--gray-100);
     line-height: 3rem;
     width: 9.5rem;
     border-radius: 30px;
+    color: var(--bg-color);
+    background-color: var(--gray-100);
     transition: color .1s, background-color .1s;
 }
 

@@ -65,5 +65,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Github](https://github.com/pjazanes)
+- Github - [@pjazanes](https://github.com/pjazanes)
 - Frontend Mentor - [@pjazanes](https://www.frontendmentor.io/profile/pjazanes)

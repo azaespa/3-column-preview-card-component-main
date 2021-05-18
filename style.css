@@ -90,6 +90,7 @@ body {
 .card-details .card-description {
     color: var(--white-50);
     padding-right: .5rem;
+    line-height: 2rem;
 }
 
 .card .card-button {
@@ -130,7 +131,7 @@ body {
     }
 
     .card .card-details{
-        max-width: 25ch;
+        max-width: 24ch;
         margin-bottom: 5rem;
     }
 }
